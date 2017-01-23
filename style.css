@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+.wrapper {
+    max-width: 1200px;
+    
+}
+/******** Navigation Bar ***********/
+
+.header {
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 1000;
+    
+}
+#menu .navicon {
+    display: none;
+    font-size: 2em;
+    float: right;
+}
+
+#menu nav {
+    float: right;
+}
+
+#menu nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+#menu nav li {
+    float: left;
+    list-style-type: none;
+    border: 1px solid black;
+}
+
+#menu nav li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #222;
+    color: #ddd;
+
+
+}
+
+#menu nav li a:hover {
+    background-color: #000;
+    color: white;
+}
+
+#menu nav li:last-child {
+    margin-right: 10px;
+}
+/***** End of Navigation Bar **********/
+
+/******** Section *************/
+.section {
+    min-height: 100vh;
+    
+    overflow: hidden;
+    /*padding-top: 60px;*/
+    /*position: relative;*/
+    
+}
+
+.section h2 {
+    font-family: 'Indie Flower', cursive;
+    color: #000;
+    padding: 2px;
+    font-size: 5em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+/********* End of Section ******************/
+/************ Section Cover *********************/
+#cover {
+     background-image: url('assets/images/bg.jpg');
+     background-image: cover;
+     border-bottom: 1px solid #f63;
+}
+.responsive-text{
+    display: none;
+}
+
+.fa-html5, .fa-css3{
+     color:#f63;
+ }
+
+section .intro-text  {
+    margin:20% auto;  
+    /*border: 1px solid black;*/
+    width:40%;
+    
+
+}
+section .intro-heading {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+  color:white;
+  font-style: italic;
+  text-align: center;
+  margin-left: 1px;
+}
+/********** End of Cover ************/
+
+/************* Section Profile ********/
+#profile{
+  background-color: #ffffff;
+}
+.profile-row{
+    
+    width:80%;
+    margin: 120px auto;
+    font-size: 16px;
+    color: #222222;
+
+}
+.profile-row h3{
+    text-align: center;
+    font-size: 28px;
+    color:#f63;
+    padding-bottom: 10px;
+}
+
+.profile-row img{
+    margin-top: -60px;
+    /*border:1px solid #222222;*/
+    margin-left: 20px;
+}
+/******** End Section Profile ****************/
+
+/*********** Section Skills *****************/
+.skills-section{
+  margin-top: 40px;
+}
+#skills{
+    background-image: url('assets/images/black.jpg');
+   }
+
+#skills{
+    border-top:1px solid #f63;
+    border-bottom: 1px solid #f63;
+}
+.skills-row{
+    padding-top:60px;
+    width:70%;
+    margin: 0 auto;
+    color: #fcfcfc;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 200%;
+
+}
+
+.skills-list{
+    list-style: none;
+}
+
+.skills-title{
+    display: inline-block;
+    width:60%;
+}
+
+
+.filled {
+    color: #f63;
+}
+
+.grey{
+    color:#fcfcfc;
+}
+/*********** End of Skills *******************/
+
+
+/************* Section Projects ********************/
+.project-section{
+  margin-top:70px;
+}
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 30px;
+}
+#quote-carousel .carousel-control {
+    background: none;
+    color: #CACACA;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+#quote-carousel .carousel-control.left {
+    left: -60px;
+}
+#quote-carousel .carousel-control.right {
+    right: -60px;
+}
+#quote-carousel .carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-right: -19px;
+}
+#quote-carousel .carousel-indicators li {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+    border: 4px solid #CCC;
+    border-radius: 50px;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+#quote-carousel .carousel-indicators .active {
+    background: #333333;
+    width: 128px;
+    height: 128px;
+    border-radius: 100px;
+    border-color: #f33;
+    opacity: 1;
+    overflow: hidden;
+}
+.carousel-inner {
+    min-height: 300px;
+}
+
+.carousel-inner img{
+  border:4px solid #f63;
+  border-radius: 4px;
+}
+
+.fa-chevron-left, .fa-chevron-right{
+  color: #f63;
+}
+/*************** End of Section Projects ******************/
+
+/******** Section Contact **************/
+section#contact {
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  background: #434242; 
+}
+
+.contact-title{
+ /* border:1px solid red;*/
+  width: 60%;
+  margin: 40px auto;
+}
+.contact-container{
+  /*border:1px solid red;*/
+  margin: 150px auto;
+  width:85%;
+
+
+}
+.fa-hand-o-down{
+  margin-left: 75px;
+  color:#f63;
+  font-size: 30px;
+}
+.btn{
+  padding:20px 35px 20px 35px;
+  border:none;
+  font-size: 20px;
+}
+.modal-content h2{
+  color: white;
+}
+.contact-title{
+    margin-bottom: 15px; 
+}
+
+.icons-container ul li {
+    display: inline-block;
+    width: 4.2em;
+    height: 4.2em;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0.25em;
+    line-height: 3.5em;
+    color: #999;
+    transition: 1s 0s linear;
+    text-decoration: none;
+}
+
+.icon-list{
+    padding:0px;
+}
+
+#btn-send-message{
+    width: 100%;
+}
+
+.line-separator{
+    border-bottom:1px solid #CDC1C5;
+}
+.box-separator{
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.icon-separator{
+    border-bottom: 2px solid orange;
+}
+
+.modal-body{
+  background: url('assets/images/riddler.jpg') no-repeat;
+  
+  
+ }
+
+
+ul.social-buttons li a {
+  display: block;
+  background-color: #222222;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  color: white;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+}
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+  background-color: #fed136;
+}
+/*********** End of Social Row **********/
+
+/*********** media queries ***********/
+@media screen and (max-width:640px) {
+    #menu .navicon {
+        display: block;
+        margin-right: 15px;
+    }
+    #menu nav {
+         display: none;
+        width: 100%;
+    }
+    #menu nav ul li {
+        width: 100%;
+    }
+    #projects ul li {
+        width: 100%;
+    }
+    /****** Cover ******/
+    .responsive-text{
+        display:block;
+        border:4px dotted #eaeaea;
+        border-radius: 8px;
+        width:50%;
+        margin:60% auto;
+        font-size: 80px;
+        padding-top: 15px;
+        padding-left: 10px;
+
+    }
+    .intro-text{
+        display: none;
+    }
+    /****** End Cover *********/
+    /******** profile ********/
+    .profile-row{
+        width:100%;
+        border:3px solid #f63;
+        padding:20px;
+    }
+
+    .profile-row img{
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .skills-row{
+        width: 100%;
+        font-size: 19px;
+        padding-top: -50px;
+    }
+
+    .contact-form-fluid{
+      width:100%;
+    }
+
+
+    
+}
+
+/********* End of media queries **********/
+
+.fixPoint {
+    background-attachment: fixed;
+}
+/*********************************************/
+#back-top {
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+}
+#back-top a {
+  width: 40px;
+  display: block;
+  color: #bbb;
+  /* background color transition */
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  transition: 1s;
+}
+#back-top a:hover {
+  color: #000;
+}
+/* arrow icon */
+#back-top span {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin-bottom: 7px;
+  background: #f63  url(assets/images/up-arrow.png) no-repeat center center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  transition: 1s;
+}
+#back-top a:hover span {
+  background-color: #00bfab;
+}
+/************************************/
